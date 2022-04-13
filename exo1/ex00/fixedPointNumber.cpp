@@ -22,3 +22,12 @@ Fixed& Fixed::operator=(const Fixed& original){
     return *this;
 }
 
+int Fixed::getRawBits(void) const{
+    cout << "getRawBits member function called" << endl;
+    return m_fixedPointValue;
+}
+
+void Fixed::setRawBits(int const raw){
+    cout << "setRawBits member function called" << endl;
+    m_fixedPointValue = raw;
+}
